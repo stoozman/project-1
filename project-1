@@ -2682,7 +2682,7 @@
     "df_result = pd.DataFrame(columns=['depth', 'n_est', 'f1', 'accuracy', 'auc_roc'])\n",
     "\n",
     "for n_est in range(220, 230):\n",
-    "    for depth in range (17, 20):\n",
+    "    for depth in range (18, 21):\n",
     "        model_forest = RandomForestClassifier(n_estimators = n_est, max_depth = depth, random_state=12345)\n",
     "        model_forest.fit(features_upsampled, target_upsampled)\n",
     "        predictions_forest = model_forest.predict(features_valid)\n",
